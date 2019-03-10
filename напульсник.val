@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.6.1.0 (https://valentinaproject.bitbucket.io/).-->
+    <version>0.7.12</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements>../Мерки/индивиндуальные/мерки-Женя.vit</measurements>
+    <increments/>
+    <previewCalculations>
+        <increment description="" formula="17" name="#длина_от_кисти_в_сторону_предплечья"/>
+        <increment description="" formula="8" name="#от_запястья_до_начала_большого_пальца"/>
+        <increment description="" formula="asin(1/2)*6" name="#пи"/>
+        <increment description="" formula="25" name="#длина_окружности_в_предплечье"/>
+        <increment description="" formula="arm_wrist_circ*0.95" name="#длина_окружности_в_запястье"/>
+        <increment description="" formula="hand_circ*0.95" name="#длина_окружности_в_кисти"/>
+        <increment description="" formula="atan((#длина_окружности_в_предплечье-#длина_окружности_в_запястье)/2/#длина_от_кисти_в_сторону_предплечья)*180/#пи" name="#угол_конуса_в_сторону_локтя"/>
+        <increment description="" formula="atan((#длина_окружности_в_кисти-#длина_окружности_в_запястье)/2/#от_запястья_до_начала_большого_пальца)*180/#пи" name="#угол_конуса_в_сторону_кисти"/>
+    </previewCalculations>
+    <draw name="Деталь предплечья">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="А" showLabel="true" type="single" x="0.79375" y="1.05833"/>
+            <arc aScale="0" angle1="-#угол_конуса_в_сторону_локтя" angle2="#угол_конуса_в_сторону_локтя" center="1" color="black" id="2" penStyle="hair" radius="#длина_окружности_в_предплечье*180/#пи/(#угол_конуса_в_сторону_локтя*2)" type="simple"/>
+            <arc aScale="0" angle1="-#угол_конуса_в_сторону_локтя" angle2="#угол_конуса_в_сторону_локтя" center="1" color="black" id="3" penStyle="hair" radius="#длина_окружности_в_запястье*180/#пи/(#угол_конуса_в_сторону_локтя*2)" type="simple"/>
+            <point arc="3" id="4" length="0" mx="0.132292" my="0.264583" name="А1" showLabel="true" type="cutArc"/>
+            <point arc="2" id="7" length="0" mx="0.132292" my="0.264583" name="А2" showLabel="true" type="cutArc"/>
+            <point arc="3" id="10" length="#длина_окружности_в_запястье" mx="0.132292" my="0.264583" name="А3" showLabel="true" type="cutArc"/>
+            <point arc="2" id="13" length="#длина_окружности_в_предплечье" mx="0.132292" my="0.264583" name="А4" showLabel="true" type="cutArc"/>
+            <line firstPoint="10" id="16" lineColor="black" secondPoint="13" typeLine="hair"/>
+            <line firstPoint="4" id="17" lineColor="black" secondPoint="7" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="18" idObject="10" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="19" idObject="13" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="20" idObject="2" inUse="true" type="modeling"/>
+            <point id="21" idObject="7" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="22" idObject="4" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="23" idObject="3" inUse="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="24" mx="0" my="0" name="Деталь предплечья" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="18" type="NodePoint"/>
+                    <node after="2" idObject="19" type="NodePoint"/>
+                    <node idObject="20" reverse="1" type="NodeArc"/>
+                    <node before="2" idObject="21" type="NodePoint"/>
+                    <node idObject="22" type="NodePoint"/>
+                    <node idObject="23" reverse="0" type="NodeArc"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="Деталь кисти">
+        <calculation>
+            <point id="25" mx="0.132292" my="0.264583" name="Б" showLabel="true" type="single" x="0.79375" y="25.3458"/>
+            <arc aScale="0" angle1="-#угол_конуса_в_сторону_кисти" angle2="#угол_конуса_в_сторону_кисти" center="25" color="black" id="26" penStyle="hair" radius="#длина_окружности_в_запястье*180/#пи/(#угол_конуса_в_сторону_кисти*2)" type="simple"/>
+            <arc aScale="0" angle1="-#угол_конуса_в_сторону_кисти" angle2="#угол_конуса_в_сторону_кисти" center="25" color="black" id="27" penStyle="hair" radius="#длина_окружности_в_кисти*180/#пи/(#угол_конуса_в_сторону_кисти*2)" type="simple"/>
+            <point arc="26" id="28" length="0" mx="0.132292" my="0.264583" name="Б1" showLabel="true" type="cutArc"/>
+            <point arc="27" id="31" length="0" mx="0.132292" my="0.264583" name="Б2" showLabel="true" type="cutArc"/>
+            <point arc="27" id="34" length="#длина_окружности_в_кисти" mx="0.132292" my="0.264583" name="Б3" showLabel="true" type="cutArc"/>
+            <point arc="26" id="37" length="#длина_окружности_в_запястье" mx="0.132292" my="0.264583" name="Б4" showLabel="true" type="cutArc"/>
+            <line firstPoint="37" id="40" lineColor="black" secondPoint="34" typeLine="hair"/>
+            <line firstPoint="28" id="41" lineColor="black" secondPoint="31" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="42" idObject="37" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="43" idObject="34" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="44" idObject="27" inUse="true" type="modeling"/>
+            <point id="45" idObject="31" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="46" idObject="28" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="47" idObject="26" inUse="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="48" inLayout="false" mx="0" my="0" name="Деталь кисти" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="42" type="NodePoint"/>
+                    <node after="2" angle="1" idObject="43" type="NodePoint"/>
+                    <node idObject="44" reverse="1" type="NodeArc"/>
+                    <node before="2" idObject="45" type="NodePoint"/>
+                    <node idObject="46" type="NodePoint"/>
+                    <node idObject="47" reverse="0" type="NodeArc"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>

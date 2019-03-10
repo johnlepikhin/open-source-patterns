@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.6.0.0 (https://valentinaproject.bitbucket.io/).-->
+    <version>0.7.12</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements>../Мерки/индивиндуальные/мерки-Женя.vit</measurements>
+    <increments/>
+    <previewCalculations/>
+    <draw name="треугольники макушки">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="А" showLabel="true" type="single" x="0.79375" y="1.05833"/>
+            <point angle="0" basePoint="1" id="54" length="head_circ*0.95/6" lineColor="black" mx="0.132292" my="0.264583" name="А1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="1" id="55" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="А2" secondPoint="54" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="55" id="56" length="head_length/2.2" lineColor="yellow" mx="0.132292" my="0.264583" name="А3" secondPoint="54" showLabel="true" type="normal" typeLine="dotLine"/>
+            <line firstPoint="1" id="57" lineColor="black" secondPoint="56" typeLine="hair"/>
+            <line firstPoint="56" id="58" lineColor="black" secondPoint="54" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="5" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="6" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="7" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="9" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="10" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="11" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="13" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="14" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="15" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="17" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="18" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="19" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="21" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="22" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="23" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="25" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="26" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="27" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="67" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="68" idObject="56" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="69" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="71" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="72" idObject="56" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="73" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="75" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="76" idObject="56" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="77" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="79" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="80" idObject="56" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="81" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="83" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="84" idObject="56" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="85" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="87" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="88" idObject="56" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="89" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="70" inLayout="true" mx="0" my="0" name="Деталь_1" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="67" type="NodePoint"/>
+                    <node idObject="68" type="NodePoint"/>
+                    <node idObject="69" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="74" inLayout="true" mx="11.304" my="0.975889" name="Деталь_1" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="71" type="NodePoint"/>
+                    <node idObject="72" type="NodePoint"/>
+                    <node idObject="73" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="78" inLayout="true" mx="21.7949" my="0.813241" name="Деталь_1" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="75" type="NodePoint"/>
+                    <node idObject="76" type="NodePoint"/>
+                    <node idObject="77" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="82" inLayout="true" mx="33.2615" my="0.813241" name="Деталь_1" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="79" type="NodePoint"/>
+                    <node idObject="80" type="NodePoint"/>
+                    <node idObject="81" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="86" inLayout="true" mx="43.7523" my="1.05721" name="Деталь_1" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="83" type="NodePoint"/>
+                    <node idObject="84" type="NodePoint"/>
+                    <node idObject="85" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="90" inLayout="true" mx="54.4871" my="1.21986" name="Деталь_1" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="87" type="NodePoint"/>
+                    <node idObject="88" type="NodePoint"/>
+                    <node idObject="89" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="обод">
+        <calculation>
+            <point id="39" mx="0.132292" my="0.264583" name="Б" showLabel="true" type="single" x="0.79375" y="27.5768"/>
+            <point angle="0" basePoint="39" id="40" length="0.95*head_circ" lineColor="black" mx="0.132292" my="0.264583" name="Б1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="39" id="59" length="head_length/1.7" lineColor="black" mx="0.132292" my="0.264583" name="Б2" secondPoint="40" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="59" id="60" length="Line_Б_Б1" lineColor="black" mx="0.132292" my="0.264583" name="Б3" secondPoint="39" showLabel="true" type="normal" typeLine="hair"/>
+            <line firstPoint="60" id="61" lineColor="black" secondPoint="40" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="49" idObject="39" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="50" idObject="46" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="51" idObject="47" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="52" idObject="48" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="62" idObject="59" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="63" idObject="60" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="64" idObject="40" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="65" idObject="39" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="66" inLayout="true" mx="0" my="0" name="Деталь" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="62" type="NodePoint"/>
+                    <node idObject="63" type="NodePoint"/>
+                    <node idObject="64" type="NodePoint"/>
+                    <node idObject="65" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.6.1.0 (https://valentinaproject.bitbucket.io/).-->
+    <version>0.7.12</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <finalMeasurements>
+        <finalMeasurment description="радиус кончика большого пальца" formula="@длина_большого_пальца/3" name="радиус_кончика_б_пальца"/>
+    </finalMeasurements>
+    <measurements>../Мерки/индивиндуальные/мерки-Женя.vit</measurements>
+    <increments/>
+    <previewCalculations>
+        <increment description="" formula="@обхват_большого_пальца_руки/3" name="#радиус_кончика_б_пальца"/>
+        <increment description="" formula="hand_length/1.4" name="#длина_раструба"/>
+        <increment description="" formula="45" name="#наклон_б_пальца"/>
+        <increment description="" formula="3.14159" name="#пи"/>
+        <increment description="" formula="@обхват_большого_пальца_руки*1.3/#пи" name="#радиус_дырки_под_б_палец"/>
+    </previewCalculations>
+    <draw name="тыльная сторона">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="А" showLabel="true" type="single" x="0.79375" y="1.05833"/>
+            <point angle="0" basePoint="1" id="2" length="hand_circ/1.8" lineColor="black" mx="0.132292" my="0.264583" name="А1" showLabel="true" type="endLine" typeLine="dotLine"/>
+            <point firstPoint="1" id="3" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="А2" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="3" id="4" length="hand_length*1.08-Line_А_А2" lineColor="black" mx="0.132292" my="0.264583" name="А3" secondPoint="2" showLabel="true" type="normal" typeLine="dotLine"/>
+            <arc aScale="0" angle1="0" angle2="180" center="4" color="black" id="5" penStyle="hair" radius="Line_А_А2" type="simple"/>
+            <point arc="5" id="6" length="0" mx="0.132292" my="0.264583" name="А4" showLabel="true" type="cutArc"/>
+            <point arc="5" id="9" length="100" mx="0.132292" my="0.264583" name="А5" showLabel="true" type="cutArc"/>
+            <line firstPoint="1" id="12" lineColor="black" secondPoint="9" typeLine="hair"/>
+            <line firstPoint="2" id="13" lineColor="black" secondPoint="6" typeLine="hair"/>
+            <point angle="0" firstPoint="3" id="14" length="#длина_раструба" lineColor="black" mx="0.132292" my="0.264583" name="А6" secondPoint="1" showLabel="true" type="normal" typeLine="dotLine"/>
+            <point angle="0" firstPoint="14" id="15" length="Line_А2_А1*1.5" lineColor="black" mx="0.132292" my="0.264583" name="А7" secondPoint="3" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" basePoint="14" id="16" length="Line_А6_А7" lineColor="black" mx="0.132292" my="0.264583" name="А8" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="1" id="17" lineColor="black" secondPoint="15" typeLine="hair"/>
+            <line firstPoint="2" id="18" lineColor="black" secondPoint="16" typeLine="hair"/>
+            <point angle="270" basePoint="15" id="19" length="4" lineColor="black" mx="0.132292" my="0.264583" name="А9" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="16" id="20" length="Line_А7_А9" lineColor="black" mx="0.132292" my="0.264583" name="А10" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="19" id="21" lineColor="black" secondPoint="20" typeLine="hair"/>
+            <point firstPoint="9" id="359" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="А13" secondPoint="1" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="270" basePoint="6" id="360" length="1" lineColor="black" mx="0.132292" my="0.264583" name="А14" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="359" id="361" length="1" lineColor="black" mx="0.132292" my="0.264583" name="А15" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="6" id="362" lineColor="black" secondPoint="359" typeLine="dashLine"/>
+            <line firstPoint="360" id="363" lineColor="black" secondPoint="361" typeLine="dashLine"/>
+            <point angle="315" basePoint="15" id="364" length="1.5" lineColor="black" mx="0.132292" my="0.264583" name="А11" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="364" id="365" length="1.5" lineColor="black" mx="0.132292" my="0.264583" name="А12" showLabel="true" type="endLine" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="46" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="47" idObject="9" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="48" idObject="5" inUse="true" type="modeling"/>
+            <point id="49" idObject="2" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="50" idObject="16" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="51" idObject="20" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="52" idObject="19" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="53" idObject="15" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point angle="0" height="0.5" id="366" idObject="364" inUse="true" placeLabelType="8" type="placeLabel" visible="1" width="0.5"/>
+            <point angle="0" height="0.5" id="367" idObject="365" inUse="true" placeLabelType="8" type="placeLabel" visible="1" width="0.5"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="54" inLayout="false" mx="-0.899294" my="0" name="Тыльная сторона" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="17" height="1.34532" letter="" mx="118.046" my="-453.491" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="8.33754">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%, %mFabric%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="1" length="1" mx="0" my="0" rotation="90" visible="true"/>
+                <nodes>
+                    <node idObject="46" type="NodePoint"/>
+                    <node idObject="47" type="NodePoint"/>
+                    <node idObject="48" reverse="1" type="NodeArc"/>
+                    <node idObject="49" type="NodePoint"/>
+                    <node idObject="50" type="NodePoint"/>
+                    <node idObject="51" type="NodePoint"/>
+                    <node idObject="52" type="NodePoint"/>
+                    <node idObject="53" type="NodePoint"/>
+                </nodes>
+                <placeLabels>
+                    <record>366</record>
+                    <record>367</record>
+                </placeLabels>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="сторона ладони">
+        <calculation>
+            <point id="22" mx="0.132292" my="0.264583" name="Б" showLabel="true" type="single" x="22.0005" y="1.05833"/>
+            <point angle="0" basePoint="22" id="23" length="Line_А_А1" lineColor="black" mx="0.132292" my="0.264583" name="Б1" showLabel="true" type="endLine" typeLine="dotLine"/>
+            <point firstPoint="22" id="24" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="Б2" secondPoint="23" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="90" basePoint="24" id="25" length="Line_А2_А3" lineColor="black" mx="0.132292" my="0.264583" name="Б3" showLabel="true" type="endLine" typeLine="dotLine"/>
+            <arc aScale="0" angle1="0" angle2="180" center="25" color="black" id="26" penStyle="hair" radius="RadiusArc_А3_10" type="simple"/>
+            <point arc="26" id="27" length="0" mx="0.132292" my="0.264583" name="Б4" showLabel="true" type="cutArc"/>
+            <point arc="26" id="30" length="Arc_А3_10" mx="0.132292" my="0.264583" name="Б5" showLabel="true" type="cutArc"/>
+            <line firstPoint="30" id="33" lineColor="black" secondPoint="22" typeLine="hair"/>
+            <line firstPoint="27" id="34" lineColor="black" secondPoint="23" typeLine="hair"/>
+            <point angle="0" firstPoint="24" id="35" length="Line_А2_А6" lineColor="black" mx="0.132292" my="0.264583" name="Б6" secondPoint="22" showLabel="true" type="normal" typeLine="dotLine"/>
+            <point angle="0" firstPoint="35" id="36" length="Line_А6_А7" lineColor="black" mx="0.132292" my="0.264583" name="Б7" secondPoint="24" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" basePoint="35" id="37" length="Line_А6_А7" lineColor="black" mx="0.132292" my="0.264583" name="Б8" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="22" id="38" lineColor="black" secondPoint="36" typeLine="hair"/>
+            <line firstPoint="23" id="39" lineColor="black" secondPoint="37" typeLine="hair"/>
+            <point angle="270" basePoint="36" id="40" length="Line_А8_А10" lineColor="black" mx="0.132292" my="0.264583" name="Б9" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="270" basePoint="37" id="41" length="Line_А7_А9" lineColor="black" mx="0.132292" my="0.264583" name="Б10" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="40" id="42" lineColor="black" secondPoint="41" typeLine="hair"/>
+            <point firstPoint="22" id="43" length="Line_Б_Б1-#радиус_дырки_под_б_палец*1.1" lineColor="black" mx="0.132292" my="0.264583" name="Б11" secondPoint="23" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="43" id="44" length="#радиус_дырки_под_б_палец/(sin(#наклон_б_пальца*#пи/180))" lineColor="black" mx="0.132292" my="0.264583" name="Б12" secondPoint="23" showLabel="true" type="normal" typeLine="dotLine"/>
+            <elArc aScale="0.5" angle1="0" angle2="360" center="44" color="black" id="238" penStyle="hair" radius1="#радиус_дырки_под_б_палец" radius2="#радиус_дырки_под_б_палец/(sin(#наклон_б_пальца*#пи/180))" rotationAngle="10" type="simple"/>
+        </calculation>
+        <modeling>
+            <point id="239" idObject="22" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="240" idObject="30" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="241" idObject="26" inUse="true" type="modeling"/>
+            <point id="242" idObject="23" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="243" idObject="37" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="244" idObject="41" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="245" idObject="40" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="246" idObject="36" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <elArc id="257" idObject="238" inUse="true" type="modeling"/>
+            <path cut="true" firstToCountour="false" id="258" inUse="true" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="257" reverse="0" type="NodeElArc"/>
+                </nodes>
+            </path>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="247" inLayout="true" mx="0" my="0" name="Сторона ладони" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="239" type="NodePoint"/>
+                    <node idObject="240" type="NodePoint"/>
+                    <node idObject="241" reverse="1" type="NodeArc"/>
+                    <node idObject="242" type="NodePoint"/>
+                    <node idObject="243" type="NodePoint"/>
+                    <node idObject="244" type="NodePoint"/>
+                    <node idObject="245" type="NodePoint"/>
+                    <node idObject="246" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="258"/>
+                </iPaths>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="палец (внутренняя часть)">
+        <calculation>
+            <point id="318" mx="0.132292" my="0.264583" name="Г" showLabel="true" type="single" x="44.238" y="1.05833"/>
+            <point angle="0" basePoint="318" id="319" length="#пи*#радиус_дырки_под_б_палец" lineColor="black" mx="0.132292" my="0.264583" name="Г1" showLabel="true" type="endLine" typeLine="hair"/>
+            <spline aScale="0" angle1="#наклон_б_пальца-15" angle2="180-#наклон_б_пальца+15" color="black" id="320" length1="Line_Г_Г1/3/(sin((90+#наклон_б_пальца-7)*#пи/180))" length2="Line_Г_Г1/3/(sin((90+#наклон_б_пальца-7)*#пи/180))" penStyle="hair" point1="318" point4="319" type="simpleInteractive"/>
+            <point firstPoint="318" id="321" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="Г2" secondPoint="319" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="90" basePoint="321" curve="320" id="322" lineColor="black" mx="0.132292" my="0.264583" name="Г3" showLabel="true" type="curveIntersectAxis" typeLine="hair"/>
+            <point angle="90" basePoint="322" id="325" length="@длина_большого_пальца-#радиус_кончика_б_пальца" lineColor="black" mx="0.132292" my="0.264583" name="Г4" showLabel="true" type="endLine" typeLine="hair"/>
+            <point cCenter="325" cRadius="#радиус_кончика_б_пальца" crossPoint="2" id="326" mx="0.132292" my="0.264583" name="Г5" showLabel="true" tangent="318" type="pointFromCircleAndTangent"/>
+            <point cCenter="325" cRadius="#радиус_кончика_б_пальца" crossPoint="1" id="327" mx="0.132292" my="0.264583" name="Г6" showLabel="true" tangent="319" type="pointFromCircleAndTangent"/>
+            <arc aScale="0" angle1="0" angle2="360" center="325" color="black" id="328" penStyle="hair" radius="#радиус_кончика_б_пальца" type="simple"/>
+            <line firstPoint="321" id="343" lineColor="black" secondPoint="325" typeLine="dotLine"/>
+        </calculation>
+        <modeling>
+            <point id="329" idObject="319" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <spline id="330" idObject="320" inUse="true" type="modelingSpline"/>
+            <point id="331" idObject="318" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="332" idObject="326" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="333" idObject="328" inUse="true" type="modeling"/>
+            <point id="334" idObject="327" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="335" mx="-3.44729" my="-11.2412" name="Палец: внутрення часть" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="329" type="NodePoint"/>
+                    <node idObject="330" reverse="1" type="NodeSpline"/>
+                    <node idObject="331" type="NodePoint"/>
+                    <node idObject="332" type="NodePoint"/>
+                    <node idObject="333" reverse="1" type="NodeArc"/>
+                    <node idObject="334" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="палец (внешняя часть)">
+        <calculation>
+            <point id="336" mx="0.132292" my="0.264583" name="Д" showLabel="true" type="single" x="59.6691" y="1.05833"/>
+            <point angle="0" basePoint="336" id="337" length="#пи*#радиус_дырки_под_б_палец" lineColor="black" mx="0.132292" my="0.264583" name="Д1" showLabel="true" type="endLine" typeLine="hair"/>
+            <spline aScale="0" angle1="-(#наклон_б_пальца+7)" angle2="270-(#наклон_б_пальца-7)" color="black" id="338" length1="Line_Г_Г1/2.3/(sin((90+#наклон_б_пальца+7)*#пи/180))" length2="Line_Г_Г1/2.3/(sin((90+#наклон_б_пальца+7)*#пи/180))" penStyle="hair" point1="336" point4="337" type="simpleInteractive"/>
+            <point firstPoint="336" id="339" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="Д2" secondPoint="337" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="90" basePoint="339" curve="338" id="340" lineColor="black" mx="0.132292" my="0.264583" name="Д3" showLabel="true" type="curveIntersectAxis" typeLine="hair"/>
+            <point angle="0" firstPoint="339" id="344" length="Line_Г2_Г4" lineColor="black" mx="0.132292" my="0.264583" name="Д4" secondPoint="337" showLabel="true" type="normal" typeLine="hair"/>
+            <arc aScale="0" angle1="0" angle2="360" center="344" color="black" id="345" penStyle="hair" radius="#радиус_кончика_б_пальца" type="simple"/>
+            <point cCenter="344" cRadius="#радиус_кончика_б_пальца" crossPoint="2" id="346" mx="0.132292" my="0.264583" name="Д5" showLabel="true" tangent="336" type="pointFromCircleAndTangent"/>
+            <point cCenter="344" cRadius="#радиус_кончика_б_пальца" crossPoint="1" id="347" mx="0.132292" my="0.264583" name="Д6" showLabel="true" tangent="337" type="pointFromCircleAndTangent"/>
+        </calculation>
+        <modeling>
+            <point id="348" idObject="337" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <spline id="349" idObject="338" inUse="true" type="modelingSpline"/>
+            <point id="350" idObject="336" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="351" idObject="346" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="352" idObject="345" inUse="true" type="modeling"/>
+            <point id="353" idObject="347" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="354" mx="-18.3606" my="1.72365" name="Палец: внешняя часть" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="348" type="NodePoint"/>
+                    <node idObject="349" reverse="1" type="NodeSpline"/>
+                    <node idObject="350" type="NodePoint"/>
+                    <node idObject="351" type="NodePoint"/>
+                    <node idObject="352" reverse="1" type="NodeArc"/>
+                    <node idObject="353" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>

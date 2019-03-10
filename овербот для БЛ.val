@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.6.1.0 (https://valentinaproject.bitbucket.io/).-->
+    <version>0.7.12</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements>../Мерки/индивиндуальные/мерки-Женя.vit</measurements>
+    <increments/>
+    <previewCalculations>
+        <increment description="" formula="4" name="#высота_обхватывающей_полосы"/>
+        <increment description="" formula="73" name="#обхват_стельки"/>
+        <increment description="" formula="leg_calf_circ*1.33" name="#длина_окружности_трубы"/>
+        <increment description="" formula="leg_ankle_circ/2" name="#расстояние_до_шнуровки"/>
+        <increment description="" formula="#длина_окружности_трубы/2-#расстояние_до_шнуровки" name="#расстояние_до_шнуровки_на_ступне"/>
+        <increment description="" formula="2" name="#ширина_укрепляющей_шнуровку_полосы"/>
+    </previewCalculations>
+    <draw name="Нижняя обхватывающая полоса">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="А" showLabel="true" type="single" x="0.79375" y="1.05833"/>
+            <point angle="0" basePoint="1" id="2" length="#обхват_стельки" lineColor="black" mx="0.132292" my="0.264583" name="А1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="90" basePoint="1" id="3" length="#высота_обхватывающей_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А2" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="90" basePoint="2" id="4" length="#высота_обхватывающей_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А3" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="3" id="11" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="А4" secondPoint="4" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="90" basePoint="11" id="12" length="height_knee-#высота_обхватывающей_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А5" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="11" id="13" length="height_ankle-#высота_обхватывающей_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А6" secondPoint="12" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="180" basePoint="13" id="14" length="#длина_окружности_трубы/2" lineColor="black" mx="0.132292" my="0.264583" name="А7" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="13" id="15" length="#длина_окружности_трубы/2" lineColor="black" mx="0.132292" my="0.264583" name="А8" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="180" basePoint="12" id="16" length="#длина_окружности_трубы/2" lineColor="black" mx="0.132292" my="0.264583" name="А9" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" basePoint="12" id="17" length="#длина_окружности_трубы/2" lineColor="black" mx="0.132292" my="0.264583" name="А10" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="3" id="18" lineColor="black" secondPoint="14" typeLine="hair"/>
+            <line firstPoint="14" id="19" lineColor="black" secondPoint="16" typeLine="hair"/>
+            <line firstPoint="17" id="20" lineColor="black" secondPoint="15" typeLine="hair"/>
+            <line firstPoint="15" id="21" lineColor="black" secondPoint="4" typeLine="hair"/>
+            <point firstPoint="13" id="22" length="#расстояние_до_шнуровки" lineColor="black" mx="0.132292" my="0.264583" name="А11" secondPoint="14" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="13" id="23" length="#расстояние_до_шнуровки" lineColor="black" mx="0.132292" my="0.264583" name="А12" secondPoint="15" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="12" id="24" length="#расстояние_до_шнуровки" lineColor="black" mx="0.132292" my="0.264583" name="А13" secondPoint="16" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="12" id="25" length="#расстояние_до_шнуровки" lineColor="black" mx="0.132292" my="0.264583" name="А14" secondPoint="17" showLabel="true" type="alongLine" typeLine="none"/>
+            <line firstPoint="24" id="26" lineColor="black" secondPoint="22" typeLine="dashLine"/>
+            <line firstPoint="25" id="27" lineColor="black" secondPoint="23" typeLine="dashLine"/>
+            <point angle="0" basePoint="3" id="28" length="#расстояние_до_шнуровки_на_ступне" lineColor="black" mx="0.132292" my="0.264583" name="А15" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="180" basePoint="4" id="29" length="#расстояние_до_шнуровки_на_ступне" lineColor="black" mx="0.132292" my="0.264583" name="А16" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="22" id="30" lineColor="black" secondPoint="28" typeLine="dashLine"/>
+            <line firstPoint="23" id="31" lineColor="black" secondPoint="29" typeLine="dashLine"/>
+            <point firstPoint="25" id="49" length="#ширина_укрепляющей_шнуровку_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А17" secondPoint="12" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="24" id="50" length="#ширина_укрепляющей_шнуровку_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А18" secondPoint="12" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="22" id="51" length="#ширина_укрепляющей_шнуровку_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А19" secondPoint="13" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="23" id="52" length="#ширина_укрепляющей_шнуровку_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А20" secondPoint="13" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" basePoint="28" id="53" length="#ширина_укрепляющей_шнуровку_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А21" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="180" basePoint="29" id="54" length="#ширина_укрепляющей_шнуровку_полосы" lineColor="black" mx="0.132292" my="0.264583" name="А22" showLabel="true" type="endLine" typeLine="hair"/>
+            <line firstPoint="53" id="55" lineColor="black" secondPoint="51" typeLine="hair"/>
+            <line firstPoint="51" id="56" lineColor="black" secondPoint="50" typeLine="hair"/>
+            <line firstPoint="49" id="57" lineColor="black" secondPoint="52" typeLine="hair"/>
+            <line firstPoint="52" id="58" lineColor="black" secondPoint="54" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="6" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="7" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="8" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="9" idObject="2" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="32" idObject="17" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="33" idObject="15" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="34" idObject="4" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="35" idObject="2" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="36" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="37" idObject="3" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="38" idObject="14" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="39" idObject="16" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="41" idObject="28" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="42" idObject="22" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="43" idObject="24" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="44" inUse="true" lastToCountour="false" name="Линия шнуровки 1" type="2" typeLine="dashLine" visible="1">
+                <nodes>
+                    <node idObject="41" type="NodePoint"/>
+                    <node idObject="42" type="NodePoint"/>
+                    <node idObject="43" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="45" idObject="25" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="46" idObject="23" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="47" idObject="29" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="48" inUse="true" lastToCountour="false" name="Линия шнуровки 2" type="2" typeLine="dashLine" visible="1">
+                <nodes>
+                    <node idObject="45" type="NodePoint"/>
+                    <node idObject="46" type="NodePoint"/>
+                    <node idObject="47" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="59" idObject="50" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="60" idObject="51" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="61" idObject="53" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="62" idObject="28" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="63" idObject="22" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="64" idObject="24" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="66" idObject="25" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="67" idObject="23" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="68" idObject="29" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="69" idObject="54" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="70" idObject="52" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="71" idObject="49" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="73" idObject="3" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="74" idObject="4" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="75" idObject="2" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="76" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="78" idObject="16" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="79" idObject="12" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="80" idObject="11" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="81" idObject="3" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="82" idObject="14" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="40" inLayout="false" mx="0" my="0" name="Овербот" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="2" idObject="32" type="NodePoint"/>
+                    <node idObject="33" type="NodePoint"/>
+                    <node idObject="34" type="NodePoint"/>
+                    <node after="2" idObject="35" type="NodePoint"/>
+                    <node before="2" idObject="36" type="NodePoint"/>
+                    <node idObject="37" type="NodePoint"/>
+                    <node idObject="38" type="NodePoint"/>
+                    <node after="2" idObject="39" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="44"/>
+                    <record path="48"/>
+                </iPaths>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="65" inLayout="false" mx="-19.9124" my="-2.83158" name="Укрепляющая шнуровку полоса 1" seamAllowance="false" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="59" type="NodePoint"/>
+                    <node idObject="60" type="NodePoint"/>
+                    <node idObject="61" type="NodePoint"/>
+                    <node idObject="62" type="NodePoint"/>
+                    <node idObject="63" type="NodePoint"/>
+                    <node idObject="64" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="72" inLayout="false" mx="18.0856" my="-2.6489" name="Укрепляющая шнуровку полоса 2" seamAllowance="false" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="66" type="NodePoint"/>
+                    <node idObject="67" type="NodePoint"/>
+                    <node idObject="68" type="NodePoint"/>
+                    <node idObject="69" type="NodePoint"/>
+                    <node idObject="70" type="NodePoint"/>
+                    <node idObject="71" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="77" mx="1.91817" my="-49.507" name="Ободок ступни" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="73" type="NodePoint"/>
+                    <node idObject="74" type="NodePoint"/>
+                    <node after="2" idObject="75" type="NodePoint"/>
+                    <node before="2" idObject="76" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="83" inLayout="false" mx="8.67743" my="-51.6079" name="Верхняя часть (половинка)" seamAllowance="true" united="false" version="2" width="0.5">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node after="2" idObject="78" type="NodePoint"/>
+                    <node after="0" before="2" idObject="79" type="NodePoint"/>
+                    <node before="0" idObject="80" type="NodePoint"/>
+                    <node idObject="81" type="NodePoint"/>
+                    <node idObject="82" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>

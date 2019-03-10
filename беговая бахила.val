@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.6.0.0 (https://valentinaproject.bitbucket.io/).-->
+    <version>0.7.12</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements>../Мерки/индивиндуальные/мерки-Женя.vit</measurements>
+    <increments/>
+    <previewCalculations/>
+    <draw name="бахила">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="А" showLabel="true" type="single" x="0.79375" y="1.05833"/>
+            <point angle="0" basePoint="1" id="2" length="leg_calf_circ/1.75" lineColor="black" mx="0.132292" my="0.264583" name="А1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="1" id="3" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="А2" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="3" id="4" length="height_calf" lineColor="black" mx="0.132292" my="0.264583" name="А3" secondPoint="1" showLabel="true" type="normal" typeLine="none"/>
+            <arc aScale="0" angle1="73.5" angle2="106.5" center="4" color="black" id="5" penStyle="hair" radius="0.95*(height_calf-height_ankle)+height_calf" type="simple"/>
+            <point arc="5" id="6" length="0" mx="0.132292" my="0.264583" name="А4" showLabel="true" type="cutArc"/>
+            <point arc="5" id="9" length="RadiusArc_А3_5" mx="0.132292" my="0.264583" name="А5" showLabel="true" type="cutArc"/>
+            <line firstPoint="1" id="10" lineColor="black" secondPoint="9" typeLine="hair"/>
+            <line firstPoint="2" id="11" lineColor="black" secondPoint="6" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="12" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <arc id="13" idObject="5" inUse="true" type="modeling"/>
+            <point id="14" idObject="2" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="15" inLayout="true" mx="0" my="0" name="Деталь" seamAllowance="true" united="false" version="2" width="0.3">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="12" type="NodePoint"/>
+                    <node idObject="13" reverse="1" type="NodeArc"/>
+                    <node idObject="14" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
