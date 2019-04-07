@@ -5,13 +5,18 @@
     <unit>cm</unit>
     <description/>
     <notes/>
-    <measurements>../Мерки/индивиндуальные/мерки-Эля.vit</measurements>
+    <measurements>../../valentina/Мерки/индивиндуальные/мерки-Женя.vit</measurements>
     <increments/>
     <previewCalculations>
         <increment description="" formula="3.14159" name="#pi"/>
+        <increment description="" formula="70" name="#длина_основной_молнии"/>
+        <increment description="" formula="3" name="#прибавка_выше_основной_молнии"/>
         <increment description="" formula="15" name="#длина_молнии_кармана"/>
-        <increment description="для взрослого 70, для ребенка 4-5 лет - 40" formula="height_neck_back-height_hip" name="#длина_без_воротника"/>
         <increment description="" formula="head_chin_to_neck_back" name="#высота_воротника"/>
+        <increment description="" formula="(height_shoulder_tip+height_armpit)/2" name="#высота_центра_рукава"/>
+        <increment description="" formula="height_neck_front-#высота_центра_рукава" name="#высота_передней_вставки_вдоль_молнии"/>
+        <increment description="" formula="#длина_основной_молнии+#прибавка_выше_основной_молнии-#высота_воротника-#высота_передней_вставки_вдоль_молнии" name="#высота_нижней_части"/>
+        <increment description="для взрослого 70, для ребенка 4-5 лет - 40" formula="#длина_основной_молнии+#прибавка_выше_основной_молнии-#высота_воротника" name="#длина_без_воротника"/>
         <increment description="" formula="hand_circ*0.9" name="#длина_окружности_рукава_в_кисти"/>
         <increment description="" formula="arm_upper_circ*1.6" name="#длина_окружности_рукава_в_плече"/>
         <increment description="" formula="arm_elbow_circ_bent*1.25" name="#длина_окружности_рукава_в_локте"/>
@@ -28,7 +33,7 @@
             <point id="1" mx="0.132292" my="0.264583" name="А" showLabel="true" type="single" x="0.79375" y="1.05833"/>
             <point angle="0" basePoint="1" id="2" length="hip_circ*1.05" lineColor="black" mx="0.132292" my="0.264583" name="А1" showLabel="true" type="endLine" typeLine="hair"/>
             <point firstPoint="1" id="3" length="CurrentLength/2" lineColor="black" mx="0.132292" my="0.264583" name="А2" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
-            <point angle="90" basePoint="3" id="4" length="#длина_без_воротника*0.76" lineColor="black" mx="0.132292" my="0.264583" name="А3" showLabel="true" type="endLine" typeLine="dotLine"/>
+            <point angle="90" basePoint="3" id="4" length="#высота_нижней_части" lineColor="black" mx="0.132292" my="0.264583" name="А3" showLabel="true" type="endLine" typeLine="dotLine"/>
             <point angle="0" basePoint="4" id="5" length="bust_circ*0.43/2+#радиус2_рукава" lineColor="black" mx="0.132292" my="0.264583" name="А4" showLabel="true" type="endLine" typeLine="dotLine"/>
             <point angle="180" basePoint="4" id="6" length="bust_circ*0.43/2+#радиус2_рукава" lineColor="black" mx="0.132292" my="0.264583" name="А5" showLabel="true" type="endLine" typeLine="dotLine"/>
             <point angle="90" basePoint="4" id="39" length="#длина_без_воротника*0.24" lineColor="black" mx="0.132292" my="0.264583" name="А15" showLabel="true" type="endLine" typeLine="dotLine"/>
@@ -41,12 +46,12 @@
             <point angle="90" basePoint="67" id="68" length="#длина_без_воротника*0.27" lineColor="black" mx="0.132292" my="0.264583" name="А21" showLabel="true" type="endLine" typeLine="dotLine"/>
             <line firstPoint="39" id="69" lineColor="black" secondPoint="68" typeLine="hair"/>
             <line firstPoint="68" id="70" lineColor="black" secondPoint="66" typeLine="hair"/>
-            <elArc aScale="0.5" angle1="180" angle2="360" center="6" color="black" id="103" penStyle="hair" radius1="#радиус2_рукава" radius2="#радиус1_рукава" rotationAngle="0" type="simple"/>
+            <elArc aScale="0.5" angle1="0" angle2="360" center="6" color="black" id="103" penStyle="hair" radius1="#радиус2_рукава" radius2="#радиус1_рукава" rotationAngle="0" type="simple"/>
             <point angle="180" basePoint="6" curve="103" id="104" lineColor="black" mx="0.132292" my="0.264583" name="А8" showLabel="true" type="curveIntersectAxis" typeLine="dotLine"/>
             <point angle="180" basePoint="4" id="112" length="bust_circ*0.43/2" lineColor="black" mx="0.132292" my="0.264583" name="А11" showLabel="true" type="endLine" typeLine="hair"/>
             <point angle="90" basePoint="112" id="113" length="#длина_окружности_рукава_в_плече/4" lineColor="black" mx="0.132292" my="0.264583" name="А13" showLabel="true" type="endLine" typeLine="hair"/>
             <line firstPoint="113" id="114" lineColor="black" secondPoint="55" typeLine="hair"/>
-            <elArc aScale="0.5" angle1="180" angle2="360" center="5" color="black" id="116" penStyle="hair" radius1="#радиус2_рукава" radius2="#радиус1_рукава" rotationAngle="0" type="simple"/>
+            <elArc aScale="0.5" angle1="0" angle2="360" center="5" color="black" id="116" penStyle="hair" radius1="#радиус2_рукава" radius2="#радиус1_рукава" rotationAngle="0" type="simple"/>
             <point angle="0" basePoint="5" curve="116" id="117" lineColor="black" mx="0.132292" my="0.264583" name="А17" showLabel="true" type="curveIntersectAxis" typeLine="dotLine"/>
             <point angle="180" basePoint="4" id="216" length="bust_circ*0.58" lineColor="black" mx="0.132292" my="0.264583" name="А6" showLabel="true" type="endLine" typeLine="dotLine"/>
             <line firstPoint="1" id="217" lineColor="black" secondPoint="216" typeLine="hair"/>
@@ -76,13 +81,13 @@
             <point id="232" idObject="4" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
             <point id="233" idObject="3" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
             <point id="234" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <point id="239" idObject="238" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <point id="240" idObject="237" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <point id="241" idObject="236" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <point id="242" idObject="1" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <point id="249" idObject="247" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <point id="250" idObject="248" inUse="true" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
-            <path cut="false" firstToCountour="false" id="251" inUse="true" lastToCountour="false" name="вырез под карман" type="2" typeLine="hair" visible="1">
+            <point id="239" idObject="238" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="240" idObject="237" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="241" idObject="236" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="242" idObject="1" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="249" idObject="247" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <point id="250" idObject="248" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="251" inUse="false" lastToCountour="false" name="вырез под карман" type="2" typeLine="hair" visible="1">
                 <nodes>
                     <node idObject="249" type="NodePoint"/>
                     <node idObject="250" type="NodePoint"/>
@@ -90,7 +95,7 @@
             </path>
         </modeling>
         <details>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="203" inLayout="false" mx="48.7518" my="-38.0624" name="верх - спина" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="203" mx="48.7518" my="-38.0624" name="верх - спина" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -104,7 +109,7 @@
                     <node idObject="202" type="NodePoint"/>
                 </nodes>
             </detail>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="235" inLayout="false" mx="49.325" my="-36.2097" name="Низ, половина" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="235" mx="49.325" my="-36.2097" name="Низ, половина" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -120,7 +125,7 @@
                     <record path="251"/>
                 </iPaths>
             </detail>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="243" inLayout="true" mx="0" my="0" name="Карман" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="243" inLayout="false" mx="0" my="0" name="Карман" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -138,7 +143,7 @@
         <calculation>
             <point id="72" mx="0.132292" my="0.264583" name="Б" showLabel="true" type="single" x="0.79375" y="74.7335"/>
             <point angle="180" basePoint="72" id="73" length="Line_А6_А8" lineColor="black" mx="0.132292" my="0.264583" name="Б1" showLabel="true" type="endLine" typeLine="hair"/>
-            <point angle="90" basePoint="73" id="74" length="#длина_без_воротника*0.1" lineColor="black" mx="0.132292" my="0.264583" name="Б2" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="90" basePoint="73" id="74" length="#высота_передней_вставки_вдоль_молнии" lineColor="black" mx="0.132292" my="0.264583" name="Б2" showLabel="true" type="endLine" typeLine="hair"/>
             <point angle="90" basePoint="72" id="75" length="#длина_окружности_рукава_в_плече/4" lineColor="black" mx="0.132292" my="0.264583" name="Б3" showLabel="true" type="endLine" typeLine="hair"/>
             <point angle="180+AngleLine_А21_А19" basePoint="75" id="76" length="Line_А21_А19" lineColor="black" mx="0.132292" my="0.264583" name="Б4" showLabel="true" type="endLine" typeLine="hair"/>
             <line firstPoint="74" id="77" lineColor="black" secondPoint="76" typeLine="hair"/>
@@ -151,7 +156,7 @@
             <point id="208" idObject="73" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
         </modeling>
         <details>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="209" inLayout="false" mx="67.0581" my="-167.511" name="верх - перед" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="209" mx="67.0581" my="-167.511" name="верх - перед" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -195,7 +200,7 @@
             <arc id="186" idObject="141" inUse="false" type="modeling"/>
         </modeling>
         <details>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="182" inLayout="false" mx="-55.7054" my="-48.9093" name="рукав - предплечье" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="182" mx="-55.7054" my="-48.9093" name="рукав - предплечье" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -208,7 +213,7 @@
                     <node idObject="181" reverse="0" type="NodeArc"/>
                 </nodes>
             </detail>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="187" inLayout="false" mx="-47.973" my="-47.2785" name="рукав - вставка" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="187" mx="-47.973" my="-47.2785" name="рукав - вставка" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -243,7 +248,7 @@
             <arc id="174" idObject="143" inUse="false" type="modeling"/>
         </modeling>
         <details>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="175" inLayout="false" mx="92.9394" my="-199.167" name="рукав - плечо" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="175" mx="92.9394" my="-199.167" name="рукав - плечо" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
@@ -274,7 +279,7 @@
             <point id="167" idObject="159" inUse="false" mx="0.132292" my="0.264583" showLabel="true" type="modeling"/>
         </modeling>
         <details>
-            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="168" inLayout="false" mx="44.2356" my="-369.284" name="воротник" seamAllowance="true" united="false" version="2" width="0.5">
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="168" mx="44.2356" my="-369.284" name="воротник" seamAllowance="true" united="false" version="2" width="0.5">
                 <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
                 <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
                 <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
